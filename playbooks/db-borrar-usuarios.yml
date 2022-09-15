@@ -1,0 +1,11 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: Eliminar usuarios anonimos
+    mysql_user:
+      name: ''
+      host: localhost
+      state: absent
+      login_user: "root"
+      login_password: "1234"

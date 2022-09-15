@@ -1,0 +1,2 @@
+[webservers]
+abraham@192.168.100.49 ansible_user=abraham
